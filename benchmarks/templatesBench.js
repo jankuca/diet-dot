@@ -1,5 +1,5 @@
 (function() {
-	var jslitmus, _, doU, doT,
+	var jslitmus, _, dietDot, doT,
 		data = { f1: 1, f2: 2, f3: 3, f4: "http://bebedo.com/laura"},
 		snippet = "<h1>Just static text</h1>\
 		<p>Here is a simple {{=it.f1}} </p>\
@@ -15,8 +15,8 @@
 	}
 
 	function testsetup(snippet) {
-		// doU with 'it'
-		var doUCompiled = doU.template(snippet);
+		// dietDot with 'it'
+		var dietDotCompiled = dietDot.template(snippet);
 		// doT with 'it'
 		var doTCompiledParam = doT.template(snippet);
 		// doT with 'this'
@@ -25,13 +25,13 @@
 		doT.templateSettings.append = false;
 		var doTCompiledNoAppend = doT.template(snippet);
 
-		jslitmus.test('doU.js', function() {
-			doUCompiled(data);
+		jslitmus.test('dietDot.js', function() {
+			dietDotCompiled(data);
 		});
 
-		jslitmus.test('doU.js - looping', function(count) {
+		jslitmus.test('dietDot.js - looping', function(count) {
 			while (count--) {
-				doUCompiled(data);
+				dietDotCompiled(data);
 			}
 		});
 
@@ -69,7 +69,7 @@
 	function runTests() {
 		//var util = require('util');
 		jslitmus = require('./jslitmus.js');
-		doU = require('./templating/doU.js');
+		dietDot = require('./templating/dietDot.js');
 		doT = require('./templating/doT.js');
 		var passOne = 0;
 		console.log("*** Small template length: " + snippet.length);
@@ -105,7 +105,7 @@
 	}
 
 	function runTestsInBrowser() {
-		jslitmus = window.jslitmus;doU = window.doU;doT = window.doT;
+		jslitmus = window.jslitmus;dietDot = window.dietDot;doT = window.doT;
 
 		var resultTmpl = doT.template("<h3>Template length : {{=it.size}} </h3>	<img src='{{=it.url}}'/>");
 		var currentSet = document.getElementById('small');

@@ -1,11 +1,11 @@
-// doT.js
-// 2011, Laura Doktorova, https://github.com/olado/doT
+// diet-dot.js
+// 2011, Laura Doktorova, https://github.com/jamescostian/diet-dot
 // Licensed under the MIT license.
 
 (function() {
 	"use strict";
 
-	var doT = {
+	var dietDot = {
 		version: '1.0.0',
 		templateSettings: {
 			evaluate:    /\{\{([\s\S]+?\}?)\}\}/g,
@@ -27,11 +27,11 @@
 	};
 
 	if (typeof module !== 'undefined' && module.exports) {
-		module.exports = doT;
+		module.exports = dietDot;
 	} else if (typeof define === 'function' && define.amd) {
-		define(function(){return doT;});
+		define(function(){return dietDot;});
 	} else {
-		(function(){ return this || (0,eval)('this'); }()).doT = doT;
+		(function(){ return this || (0,eval)('this'); }()).dietDot = dietDot;
 	}
 
 	function encodeHTMLSource() {
@@ -84,8 +84,8 @@
 		return code.replace(/\\('|\\)/g, "$1").replace(/[\r\t\n]/g, ' ');
 	}
 
-	doT.template = function(tmpl, c, def) {
-		c = c || doT.templateSettings;
+	dietDot.template = function(tmpl, c, def) {
+		c = c || dietDot.templateSettings;
 		var cse = c.append ? startend.append : startend.split, needhtmlencode, sid = 0, indv,
 			str  = (c.use || c.define) ? resolveDefs(c, tmpl, def || {}) : tmpl;
 
@@ -129,7 +129,7 @@
 		}
 	};
 
-	doT.compile = function(tmpl, def) {
-		return doT.template(tmpl, null, def);
+	dietDot.compile = function(tmpl, def) {
+		return dietDot.template(tmpl, null, def);
 	};
 }());

@@ -7,12 +7,6 @@ There are 2 goals of this fork:
 
 I intend to use this on the server side, but it also works in the browser.
 
-## doT, doU, and Diet Dot
-I'm not sure what the story is about doT and doU, but from what I understand, doT is the newer and better version of doU.
-In the root dir (the one that this file is in), I've removed doU and the minified version of doT, and I've made the `doT.js` file the place where I put diet dot's code.
-
-In the benchmarks dir, I've put the source code from doT in the `doU.js` file, and I've made the `doT.js` file execute the code in `doT.js` so when you run the benchmarks, just keep that in mind.
-
 ## Features
     custom delimiters
     runtime evaluation
