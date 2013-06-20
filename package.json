@@ -1,33 +1,27 @@
 {
-  "name": "dot",
-  "description": "Concise and fast javascript templating compatible with nodejs and other javascript environments",
-  "keywords": [
-    "template",
-    "fast",
-    "simple",
-    "templating"
-  ],
-  "version": "1.0.0",
-  "main": "index",
-  "bin": {
-    "dottojs": "./bin/dot-packer"
-  },
-  "homepage": "http://github.com/olado/doT",
-  "repository": "git://github.com/olado/doT.git",
-  "author": "Laura Doktorova <ldoktorova@gmail.com>",
-  "engines": [
-    "node >=0.2.6"
-  ],
-  "scripts": {
-    "test": "mocha"
-  },
-  "dependencies": {
-  },
-  "devDependencies": {
-    "commander": "*",
-    "uglify-js": "*",
-    "mkdirp": "*",
-    "mocha":"*",
-    "jshint":"*"
-  }
+    "name": "diet-dot",
+    "description": "The fastest + concise javascript template engine for nodejs, made even more so.",
+    "keywords": [
+        "template",
+        "fast",
+        "simple",
+        "templating"
+    ],
+    "version": "1.0.0",
+    "main": "index.js",
+    "homepage": "http://github.com/jamescostian/diet-dot",
+    "repository": "git://github.com/jamescostian/diet-dot.git",
+    "contributors": [
+        "Laura Doktorova <ldoktorova@gmail.com>",
+        "James Costian <james@jamescostian.com> (http://jamescostian.com)"
+    ]
+    "engines": {
+        "node": ">=0.2.6"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "devDependencies": {
+        "mocha": "*"
+    }
 }

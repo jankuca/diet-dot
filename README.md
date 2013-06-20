@@ -1,8 +1,19 @@
-Created in search of the fastest and concise JavaScript templating function with emphasis on performance under V8 and nodejs. It shows great performance for both nodejs and browsers.
+# Diet Dot
+Diet dot is a fork of [doT.js](https://github.com/olado/doT), a "[fast] and concise JavaScript templating function".
+There are 2 goals of this fork:
 
-doT.js is fast, small and has no dependencies.
+1. To make this use `<%blah%>` instead of `{{blah}}` because I wanted the curly braces to be reserved by [AngularJS](http://angularjs.org/)
+2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this
 
-## Features:
+I intend to use this on the server side, but it also works in the browser.
+
+## doT, doU, and Diet Dot
+I'm not sure what the story is about doT and doU, but from what I understand, doT is the newer and better version of doU.
+In the root dir (the one that this file is in), I've removed doU and the minified version of doT, and I've made the `doT.js` file the place where I put diet dot's code.
+
+In the benchmarks dir, I've put the source code from doT in the `doU.js` file, and I've made the `doT.js` file execute the code in `doT.js` so when you run the benchmarks, just keep that in mind.
+
+## Features
     custom delimiters
     runtime evaluation
     runtime interpolation
@@ -15,34 +26,8 @@ doT.js is fast, small and has no dependencies.
     streaming friendly
     use it as logic-less or with logic, it is up to you
 
-## Docs, live playground and samples:
-
-http://olado.github.com/doT (todo: update docs with new features added in version 1.0.0)
-
-## New in version 1.0.0:
-
-Node module now supports auto-compilation of dot templates from specified path: (see index.js)
-
-	var dots = require("dot").process({ path: "./views"});
-
-Added parameters support in partials:
-
-	{{##def.macro:param:
-		<div>{{=param.foo}}</div>
-	#}}
-
-	{{#def.macro:myvariable}}
-
-Compile tool to compile dot templates into js files (thanks to @Katahdin https://github.com/Katahdin/dot-packer ):
-
-	./bin/dot-packer -s examples/views -d out/views
-
-## Notes:
-    doU.js is here only so that legacy external tests do not break. Use doT.js.
-    doT.js with doT.templateSettings.append=false provides the same performance as doU.js.
-
-## Author:
+## Original Author
 Laura Doktorova @olado
 
-## License:
-doT is licensed under the MIT License. (See LICENSE-DOT)
+## License
+doT and diet dot are both licensed under the MIT License. (See LICENSE-DOT)
