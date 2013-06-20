@@ -2,8 +2,8 @@
 Diet dot is a fork of [doT.js](https://github.com/olado/doT), a "[fast] and concise JavaScript templating function".
 There are 2 goals of this fork:
 
-1. To make this use `<%blah%>` instead of `{{blah}}` because I wanted the curly braces to be reserved by [AngularJS](http://angularjs.org/)
-2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this
+1. To make this ignore things in mustache-style curly braces like `{{blah}}` because I wanted those curly braces to be reserved by [AngularJS](http://angularjs.org/)
+2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this.
 
 I intend to use this on the server side, but it also works in the browser.
 
