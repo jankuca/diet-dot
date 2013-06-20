@@ -8,7 +8,7 @@
         "templating"
     ],
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "diet-dot.js",
     "homepage": "http://github.com/jamescostian/diet-dot",
     "repository": "git://github.com/jamescostian/diet-dot.git",
     "contributors": [
