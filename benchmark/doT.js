@@ -1,3 +1,6 @@
+// This is the old code from doT. I'm keeping it here for the benchmark.
+
+
 // doT.js
 // 2011, Laura Doktorova, https://github.com/olado/doT
 //
