@@ -10,8 +10,7 @@ var dietDot = function (template, varname) {
     },
     startend = {
         start: "'+(",
-        end: ")+'",
-        endencode: "||'').toString().encodeHTML()+'"
+        end: ")+'"
     },
     settings = {
         interpolate: /<%=([\s\S]+?)%>/g,
@@ -20,15 +19,6 @@ var dietDot = function (template, varname) {
         strip: true
     },
     skip = /$^/
-
-function encodeHTMLSource() {
-    var encodeHTMLRules = { "&": "&#38;", "<": "&#60;", ">": "&#62;", '"': '&#34;', "'": '&#39;', "/": '&#47;' },
-        matchHTML = /&(?!#?\w+;)|<|>|"|'|\//g;
-    return function() {
-        return this ? this.replace(matchHTML, function(m) {return encodeHTMLRules[m] || m;}) : this;
-    };
-}
-String.prototype.encodeHTML = encodeHTMLSource();
 
 function unescape(code) {
     return code.replace(/[\r\t\n]/g, ' ');
