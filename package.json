@@ -1,6 +1,6 @@
 {
     "name": "diet-dot",
-    "description": "The fastest + concise javascript template engine for nodejs, made even more so.",
+    "description": "The fastest + concise javascript template engine for nodejs and the browser, made even more so and sans mustache-style syntax",
     "keywords": [
         "template",
         "fast",
@@ -16,6 +16,9 @@
         "James Costian <james@jamescostian.com> (http://jamescostian.com)"
     ],
     "engines": {
-        "node": ">=0.2.6"
+        "node": ">=0.8"
+    },
+    "devDependencies": {
+        "bench": "=0.3.5"
     }
 }
