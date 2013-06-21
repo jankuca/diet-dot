@@ -41,8 +41,7 @@ dietDot.prototype.compile = function(str, varname) {
         indv
 
     c.varname = varname
-    str = ("var out='" + (c.strip ? str.replace(/(^|\r|\n)\t* +| +\t*(\r|\n|$)/g,' ')
-                .replace(/\r|\n|\t|\/\*[\s\S]*?\*\//g,''): str)
+    str = ("var out='" + str
         .replace(/'|\\/g, '\\$&')
         .replace(c.interpolate || skip, function(m, code) {
             return startend.start + unescape(code) + startend.end;

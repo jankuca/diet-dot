@@ -1,1 +1,500 @@
-Hello {{data.place}}! This works!
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+
+
+
+
+
+
+
+
+
+
+
+
+Now Let's repeat a couple times:
+
+
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
+
+Here's a big if/elseif/else statement:
+<%? data.awesome %>
+If!
+<%?? data.other %>
+Else If!
+<%??%>
+Else!
+<%?%>
+Done!
+
+
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+BLAHLKjfa;dsklfjsd;klfja;kdfjka dsfa dslfkajds f;lkasd fkajdf l;adsjf alfa asldkjdf <%= data.hi %>
+Here's a big array iteration:
+<%~ data.array :value:index %><%= index %>:<%= value %>,<%~%>
