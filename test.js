@@ -2,25 +2,43 @@
 
 // Want to check to see if it works? Just run this! It'll report any errors.
 var dietDot = require('./diet-dot.js'),
-    template = 'This {{=data.secondPart}}',
+    template1 = 'This <%= data.secondPart %>',
+    template2 = 'This is <%? data.awesome %>awesome<%??%>not awesome<%?%>',
+    template3 = 'This is <%~ data :value%><%= value %>, <%~%>and awesome.',
     failed = [],
-    compiledTemplate
+    compiledTemplate1,
+    compiledTemplate2,
+    compiledTemplate3
 
-// First see if we can make a new dietDot without getting an error
+// First see if we can make new dietDots without getting any errors thrown at us
 try {
-    compiledTemplate = new dietDot(template)
+    compiledTemplate1 = new dietDot(template1)
+    compiledTemplate2 = new dietDot(template2)
+    compiledTemplate3 = new dietDot(template3)
 }
 catch (e) {
-    console.log('\x1b[31mFAILED to create a new dietDot!\x1b[0m')
+    console.log('\x1b[31mFAILED to create a new dietDot:\x1b[0m ' + e)
     process.exit()
 }
 
 // Now make more tests
-if (compiledTemplate({secondPart: 'works'}) !== 'This works') {
-    failed.push('Using the compiled the template')
+if (compiledTemplate1({secondPart: 'works'}) !== 'This works') {
+    failed.push('Using a compiled simple template (#1)')
 }
-if (compiledTemplate({secondPart: 'has worked twice now'}) !== 'This has worked twice now') {
-    failed.push('Using the compiled template a second time with different data')
+if (compiledTemplate1({secondPart: 'has worked twice now'}) !== 'This has worked twice now') {
+    failed.push('Using a compiled simple template a second time with different data (#2)')
+}
+if (compiledTemplate2({awesome: true}) !== 'This is awesome') {
+    failed.push('Using a compiled if/elseif/else template (#3)')
+}
+if (compiledTemplate2({awesome: false}) !== 'This is not awesome') {
+    failed.push('Using a compiled if/elseif/else template a second time with different data (#4)')
+}
+if (compiledTemplate3(['fast', 'cool', 'speedy', 'lightweight']) !== 'This is fast, cool, speedy, lightweight, and awesome.') {
+    failed.push('Using a compiled array template (#5)')
+}
+if (compiledTemplate3([]) !== 'This is and awesome.') {
+    failed.push('Using a compiled array template a second time with different data (#6)')
 }
 
 // Report any failures

@@ -14,9 +14,9 @@ var dietDot = function (template, varname) {
         endencode: "||'').toString().encodeHTML()+'"
     },
     settings = {
-        interpolate: /\{\{=([\s\S]+?)\}\}/g,
-        conditional: /\{\{\?(\?)?\s*([\s\S]*?)\s*\}\}/g,
-        iterate: /\{\{~\s*(?:\}\}|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*\}\})/g,
+        interpolate: /<%=([\s\S]+?)%>/g,
+        conditional: /<%\?(\?)?\s*([\s\S]*?)\s*%>/g,
+        iterate: /<%~\s*(?:%>|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*%>)/g,
         strip: true
     },
     skip = /$^/
