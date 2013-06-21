@@ -1,6 +1,6 @@
 var fs = require('fs'),
     template = fs.readFileSync(__dirname + '/templates/little.dot').toString(),
-    templateDiet = template.replace(/{{/g, '<%').replace(/}}/g, '%>')
+    templateDiet = template.replace(/{{/g, '[[').replace(/}}/g, ']]')
     data = require('./templates/little.json')
 
 exports.compare = {
@@ -12,7 +12,7 @@ exports.compare = {
     "dietDot": function () {
         var dietDot = require('../diet-dot.js')
 
-        new dietDot(templateDiet)
+        dietDot(templateDiet)
     }
 }
 

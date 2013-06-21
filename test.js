@@ -2,9 +2,9 @@
 
 // Want to check to see if it works? Just run this! It'll report any errors.
 var dietDot = require('./diet-dot.js'),
-    template1 = 'This <%= data.secondPart %>',
-    template2 = 'This is <%? data.awesome %>awesome<%??%>not awesome<%?%>',
-    template3 = 'This is <%~ data :value%><%= value %>, <%~%>and awesome.',
+    template1 = 'This [[= data.secondPart ]]',
+    template2 = 'This is [[? data.awesome ]]awesome[[??]]not awesome[[?]]',
+    template3 = 'This is [[~ data :value]][[= value ]], [[~]]and awesome.',
     failed = [],
     compiledTemplate1,
     compiledTemplate2,

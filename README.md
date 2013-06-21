@@ -1,10 +1,10 @@
 # Diet Dot
 Diet dot is a fork of [doT.js](https://github.com/olado/doT), a "[fast] and concise JavaScript templating function".
-Diet dot is ~20% faster and more lightweight, and its syntax differs from doT's so that it can parse the `<% %>` tags on the server and [AngularJS](http://angularjs.org) can run on the client and parse the mustache-style `{{ }}`
+Diet dot is ~20% faster and more lightweight, and its syntax differs from doT's so that it can parse the `[[ ]]` tags on the server and [AngularJS](http://angularjs.org) can run on the client and parse the mustache-style `{{ }}`
 
 There are 4 goals of this fork:
 
-1. To make this ignore things in mustache-style curly braces like `{{=blah}}` because I wanted those curly braces to be transformed by [AngularJS](http://angularjs.org/), so instead diet dot uses `<%=blah%>`
+1. To make this ignore things in mustache-style curly braces like `{{=blah}}` because I wanted those curly braces to be transformed by [AngularJS](http://angularjs.org/), so instead diet dot uses `[[=blah]]`
 2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this.
 3. To rid this repo of as many dependencies as possible (just like the original doT). In fact, I even removed the all of the dev dependencies that doT had, and I've only added one dev dependency for benchmarking (izs' [bench](https://npmjs.org/package/bench)).
 
@@ -12,9 +12,9 @@ NB: This might not work in browsers. I don't test for browser support because I 
 
 ## Diet Dot Features
 + Your templates can make use of data sets, which are JS objects that are given to them upon rendering
-+ Interpolation (evaluate and print) with `<%= evaluateThis() + ' and then print it!' %>`
-+ If-ElseIf-Else with `<%? ifConditionalHere === true %>` for if, `<%?? elseIfConditionalsHere === true %>` for else if, `<%??%>` for else, and `<%?%>` to close the open if/elseif/else
-+ Array iteration with `<%~yourArray :value:index%>` to start the while block and `<%~%>` to close that block. In the example `<%~yourArray :value:index%>` we loop through the array `yourArray` and anything between that and the closing `<%~%>` will be able to access a variable called `index` which will have the index of the current part of the array that we're in and you'll also get a variable called `value` which will have the value of the array at that index.
++ Interpolation (evaluate and print) with `[[= evaluateThis() + ' and then print it!' ]]`
++ If-ElseIf-Else with `[[? ifConditionalHere === true ]]` for if, `[[?? elseIfConditionalsHere === true ]]` for else if, `[[??]]` for else, and `[[?]]` to close the open if/elseif/else
++ Array iteration with `[[~yourArray :value:index]]` to start the while block and `[[~]]` to close that block. In the example `[[~yourArray :value:index]]` we loop through the array `yourArray` and anything between that and the closing `[[~]]` will be able to access a variable called `index` which will have the index of the current part of the array that we're in and you'll also get a variable called `value` which will have the value of the array at that index.
 
 ## Diet Dot Lingo
 + **Templates** are things written in diet dot syntax. They must be strings when given to diet dot.
@@ -26,9 +26,9 @@ NB: This might not work in browsers. I don't test for browser support because I 
 Install this module with `npm install diet-dot` and then you can use it like so:
 ```js
 var dietDot = require('diet-dot'), // Require diet dot
-    template = 'Hi!!! I am using <%=data.technology%>', // Just a template
+    template = 'Hi!!! I am using [[=data.technology]]', // Just a template
     dataSet = {technology: 'diet dot'}, // Our data set that we will inject into the template
-    compiledTemplate = new dietDot(template), // Compile the template
+    compiledTemplate = dietDot(template), // Compile the template
     rendition = compiledTemplate({technology: 'diet dot'}) // Run the compiled template with our data set
 
 console.log(rendition) // Tell the work what you got in the rendition
@@ -40,7 +40,7 @@ There is no testing suite because there are no dependencies.
 If you want to test, run `node test.js` and that will test to see if this module is working and report back.
 
 ## Benchmarking
-To benchmark diet dot against doT, run the benchmarks in the benchmarks dir. In general, doT is ~20% faster.
+To benchmark diet dot against doT, run the benchmarks in the benchmarks dir. In general, diet dot is ~20% faster.
 
 ## Original Author
 Laura Doktorova @olado

@@ -5,61 +5,37 @@
 
 'use strict';
 
-var dietDot = function (template, varname) {
-        return this.compile(template, varname || 'data')
+var dietDot = function (str, varname) {
+        var varname = varname || 'data',
+            sid = 0,
+            needhtmlencode,
+            indv
+
+        str = ("var out='" + str
+            .replace(/'|\\/g, '\\$&')
+            .replace(/\[\[=([\s\S]+?)\]\]/g || skip, function(m, code) { // Interpolation
+                return "'+(" + code + ")+'";
+            })
+            .replace(/\[\[\?(\?)?\s*([\s\S]*?)\s*\]\]/g || skip, function(m, elsecase, code) { // Conditional
+                return elsecase ?
+                    (code ? "';}else if(" + code + "){out+='" : "';}else{out+='") :
+                    (code ? "';if(" + code + "){out+='" : "';}out+='");
+            })
+            .replace(iterate || skip, function(m, iterate, vname, iname) { // Iterate
+                if (!iterate) return "';} } out+='";
+                sid+=1; indv=iname || "i"+sid
+                return "';var arr"+sid+"="+iterate+";if(arr"+sid+"){var "+vname+","+indv+"=-1,l"+sid+"=arr"+sid+".length-1;while("+indv+"<l"+sid+"){"
+                    +vname+"=arr"+sid+"["+indv+"+=1];out+='";
+            })
+            + "';return out;")
+            .replace(/\n/g, '\\n').replace(/\t/g, '\\t').replace(/\r/g, '\\r')
+            .replace(/(\s|;|\}|^|\{)out\+='';/g, '$1').replace(/\+''/g, '')
+            .replace(/(\s|;|\}|^|\{)out\+=''\+/g,'$1out+=');
+
+        return new Function(varname, str)
     },
-    startend = {
-        start: "'+(",
-        end: ")+'"
-    },
-    settings = {
-        interpolate: /<%=([\s\S]+?)%>/g,
-        conditional: /<%\?(\?)?\s*([\s\S]*?)\s*%>/g,
-        iterate: /<%~\s*(?:%>|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*%>)/g,
-        strip: true
-    },
+    iterate = /\[\[~\s*(?:\]\]|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*\]\])/g,
     skip = /$^/
-
-function unescape(code) {
-    return code.replace(/[\r\t\n]/g, ' ');
-}
-
-dietDot.prototype.compile = function(str, varname) {
-    var c = settings,
-        sid = 0,
-        needhtmlencode,
-        indv
-
-    c.varname = varname
-    str = ("var out='" + str
-        .replace(/'|\\/g, '\\$&')
-        .replace(c.interpolate || skip, function(m, code) {
-            return startend.start + unescape(code) + startend.end;
-        })
-        .replace(c.conditional || skip, function(m, elsecase, code) {
-            return elsecase ?
-                (code ? "';}else if(" + unescape(code) + "){out+='" : "';}else{out+='") :
-                (code ? "';if(" + unescape(code) + "){out+='" : "';}out+='");
-        })
-        .replace(c.iterate || skip, function(m, iterate, vname, iname) {
-            if (!iterate) return "';} } out+='";
-            sid+=1; indv=iname || "i"+sid; iterate=unescape(iterate);
-            return "';var arr"+sid+"="+iterate+";if(arr"+sid+"){var "+vname+","+indv+"=-1,l"+sid+"=arr"+sid+".length-1;while("+indv+"<l"+sid+"){"
-                +vname+"=arr"+sid+"["+indv+"+=1];out+='";
-        })
-        + "';return out;")
-        .replace(/\n/g, '\\n').replace(/\t/g, '\\t').replace(/\r/g, '\\r')
-        .replace(/(\s|;|\}|^|\{)out\+='';/g, '$1').replace(/\+''/g, '')
-        .replace(/(\s|;|\}|^|\{)out\+=''\+/g,'$1out+=');
-
-    try {
-        return new Function(c.varname, str)
-    }
-    catch (e) {
-        console.log('Could not create a template function: ' + str)
-        throw e
-    }
-}
 
 // Attach to module.exports or the global variable's dietDot property
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {

@@ -1,6 +1,6 @@
 var fs = require('fs'),
     template = fs.readFileSync(__dirname + '/templates/big.dot').toString(),
-    templateDiet = template.replace(/{{/g, '<%').replace(/}}/g, '%>')
+    templateDiet = template.replace(/{{/g, '[[').replace(/}}/g, ']]')
     data = require('./templates/big.json')
 
 exports.compare = {
@@ -15,7 +15,7 @@ exports.compare = {
         var dietDot = require('../diet-dot.js'),
             compilation
 
-        compilation = new dietDot(templateDiet)
+        compilation = dietDot(templateDiet)
         compilation(data)
     }
 }
