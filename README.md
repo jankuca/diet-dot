@@ -2,7 +2,7 @@
 Diet dot is a fork of [doT.js](https://github.com/olado/doT), a "[fast] and concise JavaScript templating function".
 There are 4 goals of this fork:
 
-1. To make this ignore things in mustache-style curly braces like `{{=blah}}` because I wanted those curly braces to be reserved by [AngularJS](http://angularjs.org/), and instead use `<%=blah%>
+1. To make this ignore things in mustache-style curly braces like `{{=blah}}` because I wanted those curly braces to be reserved by [AngularJS](http://angularjs.org/), and instead use `<%=blah%>`
 2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this
 3. To be prototypal
 3. No dependencies (just like the original version of this). In fact, I even removed the dev dependencies like mocha and commander.
