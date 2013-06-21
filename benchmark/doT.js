@@ -1,5 +1,5 @@
 // This is the old code from doT. I'm keeping it here for the benchmark.
-
+// The only change I've made to it is I've made data the default varname
 
 // doT.js
 // 2011, Laura Doktorova, https://github.com/olado/doT
@@ -20,7 +20,7 @@
             define:      /\{\{##\s*([\w\.$]+)\s*(\:|=)([\s\S]+?)#\}\}/g,
             conditional: /\{\{\?(\?)?\s*([\s\S]*?)\s*\}\}/g,
             iterate:     /\{\{~\s*(?:\}\}|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*\}\})/g,
-            varname: 'it',
+            varname: 'data',
             strip: true,
             append: true,
             selfcontained: false
