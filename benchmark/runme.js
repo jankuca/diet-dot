@@ -1,6 +1,6 @@
 var dietDot = require('../diet-dot.js'),
     doT = require('./doT.js'),
-    template = 'This is so {{=it.adjective}}',
+    template = 'This is so {{=data.adjective}}',
     times = 999,
     benchmark = function () {
         elapsed_time(1)

@@ -1,6 +1,6 @@
 // Want to check to see if it works? Just run this! It'll report any errors.
 var dietDot = require('./diet-dot.js'),
-    template = 'This {{=it.secondPart}}',
+    template = 'This {{=data.secondPart}}',
     failed = [],
     compiledTemplate
 
