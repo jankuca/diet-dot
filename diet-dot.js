@@ -3,29 +3,23 @@
 // 2013, James Costian, https://github.com/jamescostian/diet-dot
 // Licensed under the MIT license.
 
-"use strict";
+'use strict';
 
 var dietDot = function (template, varname) {
-        this.settings.varname = varname || 'data'
-        return this.render(template)
-    }
-
-dietDot.prototype.settings = {
-    interpolate: /\{\{=([\s\S]+?)\}\}/g,
-    conditional: /\{\{\?(\?)?\s*([\s\S]*?)\s*\}\}/g,
-    iterate: /\{\{~\s*(?:\}\}|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*\}\})/g,
-    strip: true,
-    append: true,
-    selfcontained: false
-}
-
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = dietDot;
-} else if (typeof define === 'function' && define.amd) {
-    define(function(){return dietDot;});
-} else {
-    (function(){ return this || (0,eval)('this'); }()).dietDot = dietDot;
-}
+        return this.compile(template, varname || 'data')
+    },
+    startend = {
+        start: "'+(",
+        end: ")+'",
+        endencode: "||'').toString().encodeHTML()+'"
+    },
+    settings = {
+        interpolate: /\{\{=([\s\S]+?)\}\}/g,
+        conditional: /\{\{\?(\?)?\s*([\s\S]*?)\s*\}\}/g,
+        iterate: /\{\{~\s*(?:\}\}|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*\}\})/g,
+        strip: true
+    },
+    skip = /$^/
 
 function encodeHTMLSource() {
     var encodeHTMLRules = { "&": "&#38;", "<": "&#60;", ">": "&#62;", '"': '&#34;', "'": '&#39;', "/": '&#47;' },
@@ -36,64 +30,22 @@ function encodeHTMLSource() {
 }
 String.prototype.encodeHTML = encodeHTMLSource();
 
-var startend = {
-    append: { start: "'+(",      end: ")+'",      endencode: "||'').toString().encodeHTML()+'" },
-    split:  { start: "';out+=(", end: ");out+='", endencode: "||'').toString().encodeHTML();out+='"}
-}, skip = /$^/;
-
-function resolveDefs(c, block, def) {
-    return ((typeof block === 'string') ? block : block.toString())
-    .replace(c.define || skip, function(m, code, assign, value) {
-        if (code.indexOf('def.') === 0) {
-            code = code.substring(4);
-        }
-        if (!(code in def)) {
-            if (assign === ':') {
-                if (c.defineParams) value.replace(c.defineParams, function(m, param, v) {
-                    def[code] = {arg: param, text: v};
-                });
-                if (!(code in def)) def[code]= value;
-            } else {
-                new Function("def", "def['"+code+"']=" + value)(def);
-            }
-        }
-        return '';
-    })
-    .replace(c.use || skip, function(m, code) {
-        if (c.useParams) code = code.replace(c.useParams, function(m, s, d, param) {
-            if (def[d] && def[d].arg && param) {
-                var rw = (d+":"+param).replace(/'|\\/g, '_');
-                def.__exp = def.__exp || {};
-                def.__exp[rw] = def[d].text.replace(new RegExp("(^|[^\\w$])" + def[d].arg + "([^\\w$])", "g"), "$1" + param + "$2");
-                return s + "def.__exp['"+rw+"']";
-            }
-        });
-        var v = new Function("def", "return " + code)(def);
-        return v ? resolveDefs(c, v, def) : v;
-    });
-}
-
 function unescape(code) {
-    return code.replace(/\\('|\\)/g, "$1").replace(/[\r\t\n]/g, ' ');
+    return code.replace(/[\r\t\n]/g, ' ');
 }
 
-dietDot.prototype.render = function(tmpl) {
-    var c = this.settings,
-        str = (c.use || c.define) ? resolveDefs(c, tmpl, def || {}) : tmpl,
-        cse = c.append ? startend.append : startend.split,
+dietDot.prototype.compile = function(str, varname) {
+    var c = settings,
         sid = 0,
         needhtmlencode,
         indv
 
+    c.varname = varname
     str = ("var out='" + (c.strip ? str.replace(/(^|\r|\n)\t* +| +\t*(\r|\n|$)/g,' ')
                 .replace(/\r|\n|\t|\/\*[\s\S]*?\*\//g,''): str)
         .replace(/'|\\/g, '\\$&')
         .replace(c.interpolate || skip, function(m, code) {
-            return cse.start + unescape(code) + cse.end;
-        })
-        .replace(c.encode || skip, function(m, code) {
-            needhtmlencode = true;
-            return cse.start + unescape(code) + cse.endencode;
+            return startend.start + unescape(code) + startend.end;
         })
         .replace(c.conditional || skip, function(m, elsecase, code) {
             return elsecase ?
@@ -106,21 +58,24 @@ dietDot.prototype.render = function(tmpl) {
             return "';var arr"+sid+"="+iterate+";if(arr"+sid+"){var "+vname+","+indv+"=-1,l"+sid+"=arr"+sid+".length-1;while("+indv+"<l"+sid+"){"
                 +vname+"=arr"+sid+"["+indv+"+=1];out+='";
         })
-        .replace(c.evaluate || skip, function(m, code) {
-            return "';" + unescape(code) + "out+='";
-        })
         + "';return out;")
         .replace(/\n/g, '\\n').replace(/\t/g, '\\t').replace(/\r/g, '\\r')
         .replace(/(\s|;|\}|^|\{)out\+='';/g, '$1').replace(/\+''/g, '')
         .replace(/(\s|;|\}|^|\{)out\+=''\+/g,'$1out+=');
 
-    if (needhtmlencode && c.selfcontained) {
-        str = "String.prototype.encodeHTML=(" + encodeHTMLSource.toString() + "());" + str;
-    }
     try {
-        return new Function(c.varname, str);
-    } catch (e) {
-        if (typeof console !== 'undefined') console.log("Could not create a template function: " + str);
-        throw e;
+        return new Function(c.varname, str)
     }
+    catch (e) {
+        console.log('Could not create a template function: ' + str)
+        throw e
+    }
+}
+
+// Attach to module.exports or the global variable's dietDot property
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+    module.exports = dietDot
+}
+else {
+    (function(){return eval('this')}()).dietDot = dietDot
 }

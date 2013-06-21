@@ -1,3 +1,5 @@
+'use strict';
+
 // Want to check to see if it works? Just run this! It'll report any errors.
 var dietDot = require('./diet-dot.js'),
     template = 'This {{=data.secondPart}}',

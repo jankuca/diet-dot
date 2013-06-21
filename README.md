@@ -1,13 +1,13 @@
 # Diet Dot
 Diet dot is a fork of [doT.js](https://github.com/olado/doT), a "[fast] and concise JavaScript templating function".
+Although doT is fast and lightweight, diet dot *insanely* fast and lightweight.
 There are 4 goals of this fork:
 
-1. To make this ignore things in mustache-style curly braces like `{{=blah}}` because I wanted those curly braces to be reserved by [AngularJS](http://angularjs.org/), and instead use `<%=blah%>`
-2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this
-3. To be prototypal
-3. No dependencies (just like the original version of this). In fact, I even removed the dev dependencies like mocha and commander.
+1. To make this ignore things in mustache-style curly braces like `{{=blah}}` because I wanted those curly braces to be transformed by [AngularJS](http://angularjs.org/), so instead diet dot uses `<%=blah%>`
+2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this.
+3. To rid this repo of dependencies (just like the original version of this). In fact, I even removed the dev dependencies like mocha and commander that doT had.
 
-This will *not* work in the browser.
+This might not work in browsers. IDK - I don't test for browser support because I don't need it, but I think that it will work in browsers.
 
 ## Features
 The original doT had many more features than this, but these are the features that I left in:
@@ -37,18 +37,31 @@ If you want to test, run `node test.js` and that will test to see if this module
 ## Benchmarking
 To benchmark this project, run `node benchmark/runme.js` and you'll get results like the ones I got:
 ```
-Beginning benchmark
+Testing doT...
+Testing diet dot...
+Results:
 
-First I'll test doT
-0.700368 ms - Compiled template
-0.756242 ms - Used the compiled template 999 times
+========================================
+Test: createTemplate x 1
+========================================
+Name      Time ms
+doT       2.245817
+diet dot  0.791441
 
+========================================
+Test: render x 999
+========================================
+Name      Time ms   Avg ms
+doT       0.734171  0.000735
+diet dot  0.056990  0.000057
 
-Now I'll test diet dot
-0.397536 ms - Compiled template
-0.056711 ms - Used the compiled template 999 times
-
-Test completed
+========================================
+Conclusion
+========================================
+Creating Templates:
+    diet dot is 283.763% faster
+Rendering:
+    diet dot is 1288.245306% faster
 ```
 
 ## Original Author
