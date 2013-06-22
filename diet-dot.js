@@ -32,7 +32,7 @@ var dietDot = function (str, varname) {
             .replace(/(\s|;|\}|^|\{)out\+='';/g, '$1').replace(/\+''/g, '')
             .replace(/(\s|;|\}|^|\{)out\+=''\+/g,'$1out+=');
 
-        return new Function(varname, str)
+        return Function(varname, str)
     },
     iterate = /\[\[~\s*(?:\]\]|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*\]\])/g,
     skip = /$^/
