@@ -6,7 +6,7 @@ There are 3 goals of this fork:
 
 1. To make this ignore things in mustache-style curly braces like `{{=blah}}` because I wanted those curly braces to be transformed by [AngularJS](http://angularjs.org/), so instead diet dot uses `[[=blah]]`
 2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this.
-3. To rid this repo of as many dependencies as possible (just like the original doT). In fact, I even removed the all of the dev dependencies that doT had, and I've only added one dev dependency for benchmarking (izs' [bench](https://npmjs.org/package/bench)).
+3. To rid this repo of as many dependencies as possible (just like the original doT). In fact, I even removed the all of the dev dependencies that doT had.
 
 NB: This might not work in browsers. I don't test for browser support because I don't need it, but I think that it will work in browsers.
 
@@ -40,7 +40,7 @@ There is no testing suite because there are no dependencies.
 If you want to test, run `node test.js` and that will test to see if this module is working and report back.
 
 ## Benchmarking
-To benchmark diet dot against doT, run the benchmarks in the benchmarks dir. In general, diet dot is ~20% faster.
+To benchmark diet dot against doT, run the benchmarks in [this project](https://github.com/jamescostian/templating-engine-benchmarks). In general, diet dot is ~20% faster.
 
 ## Original Author
 Laura Doktorova @olado
