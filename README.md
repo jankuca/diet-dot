@@ -2,7 +2,7 @@
 Diet dot is a fork of [doT.js](https://github.com/olado/doT), a "[fast] and concise JavaScript templating function".
 Diet dot is ~20% faster and more lightweight, and its syntax differs from doT's so that it can parse the `[[ ]]` tags on the server and [AngularJS](http://angularjs.org) can run on the client and parse the mustache-style `{{ }}`
 
-There are 4 goals of this fork:
+There are 3 goals of this fork:
 
 1. To make this ignore things in mustache-style curly braces like `{{=blah}}` because I wanted those curly braces to be transformed by [AngularJS](http://angularjs.org/), so instead diet dot uses `[[=blah]]`
 2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this.
