@@ -17,8 +17,5 @@
     ],
     "engines": {
         "node": ">=0.8"
-    },
-    "devDependencies": {
-        "bench": "=0.3.5"
     }
 }
