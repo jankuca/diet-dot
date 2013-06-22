@@ -5,7 +5,7 @@ Diet dot is ~20% faster and more lightweight, and its syntax differs from doT's 
 There are 3 goals of this fork:
 
 1. To make this ignore things in mustache-style curly braces like `{{=blah}}` because I wanted those curly braces to be transformed by [AngularJS](http://angularjs.org/), so instead diet dot uses `[[=blah]]`
-2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this.
+2. To be faster and even more concise/lightweight by removing functionality that I personally didn't need at the time of writing this. In fact, this is so lightweight that this whole package is less than 10kb!
 3. To rid this repo of as many dependencies as possible (just like the original doT). In fact, I even removed the all of the dev dependencies that doT had.
 
 NB: This might not work in browsers. I don't test for browser support because I don't need it, but I think that it will work in browsers.
