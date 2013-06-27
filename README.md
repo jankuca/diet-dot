@@ -1,4 +1,4 @@
-# Diet Dot
+# Diet Dot [![Build Status](https://travis-ci.org/jamescostian/diet-dot.png?branch=master)](https://travis-ci.org/jamescostian/diet-dot)
 Diet dot is a fork of [doT.js](https://github.com/olado/doT), a "[fast] and concise JavaScript templating function".
 Diet dot is ~20% faster and more lightweight, and its syntax differs from doT's so that it can parse the `[[ ]]` tags on the server and [AngularJS](http://angularjs.org) can run on the client and parse the mustache-style `{{ }}`
 
